@@ -12,6 +12,9 @@ def read_restaurant_ratings():
         restaurant_ratings[restaurant] = ratings
 
     #import pdb; pdb.set_trace()
+    user_restaurant = raw_input("Add a restaurant please: ")
+    user_rating = raw_input("Add a rating for {} please: ".format(user_restaurant))
+    restaurant_ratings[user_restaurant] = user_rating
 
     sorted_restaurants = sorted(restaurant_ratings.items())
 
